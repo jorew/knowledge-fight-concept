@@ -21,7 +21,7 @@
 			<iconify-icon icon="lucide:alert-triangle" height="1.25em"></iconify-icon>
 			<p>This is not the official Knowledge Fight Website!</p>
 		</div>
-		<button class="flex items-center" on:click={dismissBanner}>
+		<button class="flex items-center" on:click={dismissBanner} aria-label="Dismiss banner">
 			<iconify-icon icon="lucide:x" height="1.25em"></iconify-icon>
 		</button>
 	</div>
@@ -31,9 +31,8 @@
 
 <main class="mx-auto min-h-screen max-w-(--breakpoint-md) px-4">
 	<div class="lg:md-24 mt-4 md:mt-16">
-		<div class="flex items-start justify-between">
+		<div class="inline items-start justify-between">
 			<h1 class="mb-2 font-mono text-5xl tracking-[0.25em] uppercase">Knowledge Fight</h1>
-			<Theme />
 		</div>
 
 		<h3 class="mb-2 text-sm">
@@ -43,6 +42,6 @@
 	</div>
 	<Nav />
 	<slot></slot>
-	<div class="pb-28" />
+	<div class="pb-28" > </div>
 	<footer><Player /></footer>
 </main>

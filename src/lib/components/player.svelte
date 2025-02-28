@@ -183,6 +183,7 @@
 									{$currentTrack?.title || ''}
 								</div>
 								<button
+									aria-label="Toggle fullscreen"
 									on:click={toggleFullscreen}
 									class="absolute right-2 bottom-2 mt-0.5 -mb-2 text-base text-neutral-700 hover:text-neutral-900 md:static dark:text-neutral-300 dark:hover:text-neutral-100"
 								>
@@ -238,6 +239,7 @@
 			>
 				<!-- Close button -->
 				<button
+					aria-label="Close fullscreen player"
 					on:click={toggleFullscreen}
 					class="absolute top-6 right-6 text-3xl text-neutral-300 hover:text-white"
 				>
@@ -279,6 +281,7 @@
 				<!-- Controls -->
 				<div class="flex items-center justify-center space-x-8 text-white">
 					<button
+						aria-label="Previous track"
 						on:click={handlePrev}
 						class="text-3xl opacity-70 transition-opacity hover:opacity-100"
 					>
@@ -309,6 +312,7 @@
 						<div class="absolute top-2 right-0 left-0 text-xs">15</div>
 					</button>
 					<button
+						aria-label="Next track"
 						on:click={handleNext}
 						class="text-3xl opacity-70 transition-opacity hover:opacity-100"
 					>

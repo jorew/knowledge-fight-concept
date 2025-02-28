@@ -106,7 +106,7 @@
 		<button
 			on:click={handleNextPage}
 			disabled={currentPage >= totalPages}
-			class="flex items-center justify-end rounded-full bg-slate-300 py-2 pl-4 shadow-md transition-colors hover:bg-slate-400 disabled:opacity-50 dark:bg-slate-600 dark:hover:bg-slate-700"
+			class="flex items-center justify-end rounded-full bg-slate-300 py-2 pl-4 text-base shadow-md transition-colors hover:bg-slate-400 disabled:opacity-50 dark:bg-slate-600 dark:hover:bg-slate-700"
 		>
 			Next Page<iconify-icon icon="lucide:chevron-right" class="px-4" />
 		</button>

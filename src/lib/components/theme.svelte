@@ -35,8 +35,9 @@
 </script>
 
 <button
+	aria-label="Toggle theme"
 	on:click={toggleTheme}
-	class="relative flex h-10 w-10 transform items-center justify-center rounded-full bg-neutral-300 shadow ring-0 transition duration-200 ease-in-out dark:bg-neutral-700"
+	class="h-7 w-7 transform items-center justify-center rounded-full bg-neutral-300 text-base shadow ring-0 transition duration-200 ease-in-out dark:bg-neutral-700"
 >
 	<iconify-icon icon="lucide:sun" height="1.25em" class="dark:hidden"></iconify-icon>
 	<iconify-icon icon="lucide:moon" height="1.25em" class="hidden dark:block"></iconify-icon>
